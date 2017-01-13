@@ -1,0 +1,31 @@
+subprojects {
+    group 'com.luxoft.cognos.test'
+    version '1.0-SNAPSHOT'
+
+    apply plugin: 'java'
+
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+
+        compile 'ch.qos.logback:logback-classic:+'
+
+        compileOnly 'org.projectlombok:lombok:+',
+                'edu.washington.cs.types.checker:checker-framework:+'
+
+        testCompile 'org.projectlombok:lombok:+',
+                'junit:junit:+'
+//                'org.junit.jupiter:junit-jupiter-api:+'
+
+//        testRuntime
+//                'org.junit.jupiter:junit-jupiter-engine:+'
+//                'org.junit.vintage:junit-vintage-engine:+'
+//                'org.junit.platform:junit-platform-gradle-plugin:+',
+//                    'org.junit.jupiter:junit-jupiter-api:+'
+    }
+}

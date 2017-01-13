@@ -1,0 +1,4 @@
+rootProject.name = 'Cognos-test'
+
+include 'rest-api',
+        'excel-equalaser'
